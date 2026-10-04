@@ -11,6 +11,7 @@ authors:
     given-names: Alireza
 date-released: 2026-10-04
 version: 1.0.0
+repository-code: "https://github.com/sepehrghias/ucvt-meta-rl"
 keywords:
   - meta-reinforcement-learning
   - out-of-distribution-generalization
@@ -21,4 +22,3 @@ abstract: >-
   UC-VT uses ensemble disagreement to estimate epistemic uncertainty and
   down-weight unreliable synthetic transitions during out-of-distribution
   meta-reinforcement learning.
-

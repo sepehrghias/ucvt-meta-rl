@@ -108,7 +108,7 @@ Extended UC-VT training later exhibits large virtual Bellman-loss spikes and cri
 Python 3.10 or 3.11 is recommended.
 
 ```bash
-git clone https://github.com/OWNER/ucvt-meta-rl.git
+git clone https://github.com/sepehrghias/ucvt-meta-rl.git
 cd ucvt-meta-rl
 
 python -m venv .venv
@@ -212,4 +212,3 @@ If this repository helps your work, please cite it using [`CITATION.cff`](CITATI
 ## Acknowledgements
 
 UC-VT builds on ideas from **Task-Aware Virtual Training (TAVT)**, **Latent Dynamics Mixture**, deep ensembles, and Soft Actor-Critic. See the paper for the complete discussion and references.
-
