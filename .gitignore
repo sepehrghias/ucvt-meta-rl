@@ -1,0 +1,29 @@
+# macOS / editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Training artifacts (published CSV results remain tracked)
+checkpoints/
+**/checkpoints/
+*.pth
+*.pt
+wandb/
+runs/
+
+# Local logs and temporary outputs
+logs/
+*.log
+*.tmp
+

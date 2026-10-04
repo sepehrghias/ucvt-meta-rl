@@ -1,0 +1,22 @@
+UC-VT sequential (multi-step, Fitted-Q Iteration) proof of concept
+Seeds: 25, horizon: 6, gamma: 0.9
+Dynamics are known/deterministic; only the reward (goal position) is task-unknown.
+
+Main discounted OOD returns (mean +/- sample std):
+  Real only: -2.9387 +/- 0.4126
+  Unweighted VT: -4.3858 +/- 0.0402
+  Uniform matched: -4.3963 +/- 0.0851
+  Random weights: -4.4110 +/- 0.1761
+  Hard rejection: -4.1117 +/- 0.1836
+  UC-VT: -3.0690 +/- 0.3378
+  Oracle diagnostic: -4.0446 +/- 0.0746
+
+Per-seed Pearson uncertainty/error correlation: 0.802 +/- 0.132
+Per-seed Spearman uncertainty/error correlation: 0.885 +/- 0.027
+
+Paired comparisons (UC-VT minus baseline):
+  UC-VT vs unweighted: mean diff=1.3167, 95% CI=[1.1902, 1.4433], paired p=1.14e-16, win rate=100.0%
+  UC-VT vs uniform matched-mass: mean diff=1.3272, 95% CI=[1.2070, 1.4475], paired p=2.99e-17, win rate=100.0%
+  UC-VT vs random weighting: mean diff=1.3419, 95% CI=[1.2067, 1.4772], paired p=3.38e-16, win rate=100.0%
+  UC-VT vs hard rejection: mean diff=1.0427, 95% CI=[0.8935, 1.1918], paired p=7.69e-13, win rate=100.0%
+  UC-VT vs real-only: mean diff=-0.1304, 95% CI=[-0.3059, 0.0452], paired p=0.159, win rate=36.0%

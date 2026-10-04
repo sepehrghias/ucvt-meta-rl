@@ -1,0 +1,10 @@
+# Sequential proof of concept
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+
+# Deep meta-RL implementation
+torch>=2.1
+gymnasium>=0.29
+mujoco>=3.0
+
